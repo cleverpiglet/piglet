@@ -1,0 +1,11 @@
+//mysql에서
+이미 저장된 테이블의
+이름의 첫글자를 대문자로 바꾸어서
+출력 가능한 방법
+
+
+
+
+update emp
+set ename = concat(ucase(left(ename,1)),
+lcase(substring(ename, 2)));
